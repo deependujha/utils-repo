@@ -1,0 +1,28 @@
+/* media query to hide the text links in smaller devices */
+@media only screen and (max-width: 768px) {
+	.textLinks {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.toggleNavbar {
+		display: none;
+	}
+}
+
+.fullScreenNavbar {
+	background-color: #e43e6f;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.closeBtn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}

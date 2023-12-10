@@ -1,0 +1,98 @@
+---------------------------------------
+
+// write name of all the fields for which you want values
+{
+  users{
+    firstName
+    lastName
+  }
+}
+---------------------------------------
+
+// we can also give our queries a name (like getAllUsers)
+query getAllUsers{
+  users{
+    firstName
+    lastName
+    email
+  }
+}
+---------------------------------------
+
+query getAllQuotes{
+  quotes{
+    quote
+    by
+  }
+}
+---------------------------------------
+
+# get users along with their quotes
+query getAllUsers{
+  users{
+    firstName
+    lastName
+    quotes{
+      quote
+    }
+  }
+}
+---------------------------------------
+
+query getAllQuotes{
+  quotes{
+    quote
+    firstName
+    lastName
+  }
+}
+---------------------------------------
+
+query getUserByID{
+  user(id:"103"){
+    firstName
+    lastName
+    email
+  }
+}
+---------------------------------------
+
+####  Query  ####
+
+query getUserByID($userId : ID!){
+  user(id:$userId){
+    firstName
+    lastName
+    email
+    quotes{
+      quote
+    }
+  }
+}
+####  Query Variables  ####
+{
+  "userId": "102"
+}
+---------------------------------------
+
+####  Query  ####
+mutation signUpDummyUserBetter($newUser: createUser!) {
+  signUpDummyUserBetter(
+    newUser:$newUser
+  ) {
+    firstName
+    lastName
+    email
+  }
+}
+
+####  Query Variables  ####
+{
+  "newUser": {
+    "firstName": "alpha",
+    "lastName": "beta",
+    "email": "alphabeta@gmail.com",
+    "password": "faojfao"
+  }
+}
+---------------------------------------

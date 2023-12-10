@@ -1,0 +1,20 @@
+{
+	"name": "03_connecting_with_mongodb",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"apollo-server": "^3.10.4",
+		"apollo-server-core": "^3.10.4",
+		"bcryptjs": "^2.4.3",
+		"graphql": "^16.6.0",
+		"mongoose": "^6.7.0"
+	}
+}

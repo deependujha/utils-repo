@@ -1,0 +1,12 @@
+{
+	"name": "@deependu/my-first-package",
+	"version": "1.0.0",
+	"description": "Hi, I'm Deependu. This is my first npm package. I'm just trying to learn it for the first time.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Deependu Jha",
+	"license": "ISC"
+}

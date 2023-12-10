@@ -1,0 +1,22 @@
+{
+	"name": "privatekey_from_seedphrase",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "npx tsc",
+		"start": "node dist/index.js",
+		"dev": "npx tsc; node dist/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"ethers": "^5.7.2"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.18",
+		"typescript": "^4.9.4"
+	}
+}

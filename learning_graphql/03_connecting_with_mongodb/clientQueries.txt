@@ -1,0 +1,34 @@
+### Query variables for creating new user  ###
+
+{
+  "newUser": {
+    "firstName": "alpha",
+    "lastName": "beta",
+    "email": "alphabeta@gmail.com",
+    "password": "faojfao"
+  }
+}
+
+{
+  "newUser": {
+    "firstName": "deependu",
+    "lastName": "jha",
+    "email": "deependujha21@gmail.com",
+    "password": "deependu"
+  }
+}
+
+### mutation for the end-point
+
+mutation signUpUser($newUser: createUser!) {
+  signUpUser(
+    newUser:$newUser
+  ) {
+    firstName
+    lastName
+    email
+  }
+}
+
+---------------------------------------
+
